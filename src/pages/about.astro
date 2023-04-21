@@ -1,0 +1,146 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+import Pill from '../components/PillAbout.astro';
+import Icon from '../components/Icon.astro';
+---
+
+<BaseLayout title="À propos | Eliott Goncalves" description="À propos de Eliott Gonçalves">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="À propos"
+				tagline="Merci de votre visite. Lisez ci-dessous pour en savoir plus sur moi et mon parcours"
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/portrait3.jpg"
+					alt="Eliott à la plage qui regarde en direction de l'horizon avec son chien"
+				/>
+			</Hero>
+
+
+			<section>
+				<h2 class="section-title">Expérience en entreprise</h2>
+				<div class="content">
+					<p> • Refonte de sites web existants avec WordPress, Symfony, Twig, JavaScript, HTML et CSS <br>
+						• Connaissance approfondie en référencement naturel (SEO) et payant (SEM) pour attirer un trafic qualifié sur un site web <br>
+						• Utilisation de Docker pour travailler dans un environnement isolé et portable, ainsi que pour faciliter le déploiement des applications sur différents environnements <br>
+						• Travaillé en déploiement continu (CI/CD) pour automatiser le processus de déploiement des applications, améliorant la satisfaction des utilisateurs et la détection rapide des erreurs et des bugs <br>
+					</p> <br>
+					<p>
+						• Impliqué dans plusieurs projets passionnants, dont Chainsaw, leur blockchain privée <br>
+						• Mise en place de nouvelles fonctionnalités pour leur système, avec l'utilisation de Vue.js et JavaScript <br>
+						• Documentation technique détaillée pour mes projets et travail en relation directe avec les clients pour les aider dans la mise en place de leurs systèmes <br>
+						• Solides connaissances en SEO (Search Engine Optimization) et SEM (Search Engine Marketing), ainsi que l'utilisation d'outils tels que Google Analytics, SEMrush, Ahrefs et Moz pour améliorer le positionnement des sites web sur les moteurs de recherche et augmenter la visibilité des sites. <br>
+					</p>
+					<br>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Diplômes</h2>
+				<div class="content">
+					<p>Je suis titulaire d'une licence LLCE Anglais obtenue à l'Université de Créteil, 
+						où j'ai acquis des compétences en communication, en rédaction et en analyse critique, 
+						qui me sont utiles dans mon travail de développeur web. Cela m'a permis d'acquérir une maîtrise avancée 
+						de la langue anglaise, tant à l'oral qu'à l'écrit. Cette compétence est un atout indéniable dans 
+						le milieu professionnel, où la communication en anglais est de plus en plus courante, notamment 
+						dans les équipes internationales. J'ai également suivi une formation 
+						intensive de 5 mois à la Wild Code School, où j'ai appris les technologies les plus récentes 
+						en matière de développement web, y compris PHP et Symfony. Mes connaissances en développement 
+						web, combinées à ma formation universitaire en langues et en communication, me permettent d'apporter 
+						une approche holistique à tous mes projets de développement web.</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Compétences</h2>
+				<div class="content">
+					<p>	J'ai acquis de solides connaissances en SEO (Search Engine Optimization) et SEM (Search Engine Marketing) tout au 
+						long de mes expériences professionnelles. J'ai travaillé sur l'optimisation de sites pour améliorer leur positionnement 
+						sur les moteurs de recherche tels que Google, en utilisant des techniques de référencement naturel et payant. J'ai également 
+						utilisé des outils tels que Google Analytics pour analyser le trafic du site, identifier les sources de trafic et les comportements 
+						des utilisateurs, ce qui a permis de mettre en place des stratégies pour augmenter la visibilité du site et améliorer l'expérience 
+						utilisateur.
+						Je suis également familier avec d'autres logiciels similaires tels que SEMrush, Ahrefs et Moz, qui sont des outils d'analyse et 
+						d'optimisation de la recherche en ligne. Grâce à ces compétences, j'ai pu apporter une contribution significative à la stratégie 
+						de marketing numérique des entreprises pour lesquelles j'ai travaillé.</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Passions</h2>
+				<div class="content">
+					<div class="roles">
+						<Pill><Icon icon="blockchain" size="1.33em" />Blockchain</Pill>
+						<Pill><Icon icon="solidity" size="1.33em" />Solidity</Pill>
+						<Pill><Icon icon="trophy" size="1.33em" /> Capture The Flag </Pill>
+						<Pill><Icon icon="book" size="1.33em" /> Lecture</Pill>
+						<Pill><Icon icon="rocket-launch" size="1.33em" /> Sport</Pill>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
