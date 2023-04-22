@@ -2,10 +2,9 @@
 title: Emma Burke Ceramic
 publishDate: 2023-04-06 00:00:00
 img: /assets/326386554_460744259440895_6956773006472812101_n.jpg
-img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
+img_alt: Image de céramique du site emma burke ceramic
 description: |
-  We paired with a cutting-edge music API and a team of horticulturalists
-  to build AI-generated playlists that maximize houseplant health.
+Site e-commerce avec un blog. Utilisation de Wordpress et optimisation SEO. 
 tags:
   - E-commerce  
   - Blog
