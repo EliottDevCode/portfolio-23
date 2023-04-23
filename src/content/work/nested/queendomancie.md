@@ -3,8 +3,9 @@ title: Queendomancie
 publishDate: 2023-04-06 00:00:00
 img: /assets/IMG_0443.JPG
 img_alt: Dessin coloré de Queendomancie
-description: | Site e-commerce avec un blog. Utilisation de Wordpress et optimisation SEO.
-tags:
+description: | 
+  Site e-commerce avec un blog. Utilisation de Wordpress et optimisation SEO.
+tags: 
   - E-commerce
   - Blog
   - Wordpress

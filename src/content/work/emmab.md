@@ -3,8 +3,9 @@ title: Emma Burke Ceramic
 publishDate: 2023-04-06 00:00:00
 img: /assets/326386554_460744259440895_6956773006472812101_n.jpg
 img_alt: Image de céramique du site emma burke ceramic
-description: | Site e-commerce avec un blog. Utilisation de Wordpress et optimisation SEO. 
-tags:
+description: | 
+  Site e-commerce avec un blog. Utilisation de Wordpress et optimisation SEO. 
+tags: 
   - E-commerce  
   - Blog
   - Wordpress 
