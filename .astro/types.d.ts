@@ -87,16 +87,16 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"work": {
-"emmab.md": {
-  id: "emmab.md",
-  slug: "emmab",
+"nested/queendomancie.md": {
+  id: "nested/queendomancie.md",
+  slug: "nested/queendomancie",
   body: string,
   collection: "work",
   data: InferEntrySchema<"work">
 } & { render(): Render[".md"] },
-"nested/queendomancie.md": {
-  id: "nested/queendomancie.md",
-  slug: "nested/queendomancie",
+"petsitter.md": {
+  id: "petsitter.md",
+  slug: "petsitter",
   body: string,
   collection: "work",
   data: InferEntrySchema<"work">
